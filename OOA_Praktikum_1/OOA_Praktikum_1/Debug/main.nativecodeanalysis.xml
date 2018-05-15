@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+      <FILENAME>priorityqueue.h</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>26</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Using uninitialized memory '*current'.</DESCRIPTION>
+    <FUNCTION>pqueue_destroy</FUNCTION>
+    <DECORATED>pqueue_destroy</DECORATED>
+    <FUNCLINE>175</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>priorityqueue.h</FILENAME>
+        <LINE>177</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>priorityqueue.h</FILENAME>
+        <LINE>179</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>priorityqueue.h</FILENAME>
+        <LINE>181</LINE>
+        <COLUMN>30</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>priorityqueue.h</FILENAME>
+        <LINE>182</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>priorityqueue.h</FILENAME>
+        <LINE>184</LINE>
+        <COLUMN>34</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>priorityqueue.h</FILENAME>
+        <LINE>185</LINE>
+        <COLUMN>24</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>priorityqueue.h</FILENAME>
+        <LINE>186</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'*current' is not initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>priorityqueue.h</FILENAME>
+        <LINE>181</LINE>
+        <COLUMN>30</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>priorityqueue.h</FILENAME>
+        <LINE>182</LINE>
+        <COLUMN>26</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this loop, (assume 'current-&gt;next_entry')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>priorityqueue.h</FILENAME>
+        <LINE>182</LINE>
+        <COLUMN>26</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'*current' is used, but may not have been initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+      <FILENAME>main.c</FILENAME>
+      <LINE>11</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Buffer overrun while writing to 'str':  the writable size is '(unsigned int)(size+1)*sizeof(char)' bytes, but '2' bytes might be written.</DESCRIPTION>
+    <FUNCTION>random_string</FUNCTION>
+    <DECORATED>random_string</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>9</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'str' is a 0 byte array</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>10</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>10</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this loop, (assume 'i&lt;size')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>11</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>10</LINE>
+        <COLUMN>30</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'i' may equal 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>10</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Continue this loop, (assume 'i&lt;size')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>11</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Invalid write to 'str', (outside its writable range)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+      <FILENAME>main.c</FILENAME>
+      <LINE>13</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Dereferencing NULL pointer 'str'. </DESCRIPTION>
+    <FUNCTION>random_string</FUNCTION>
+    <DECORATED>random_string</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>9</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'str' may be NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>10</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>10</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\henri\dropbox\studium\2. semester\ooa\ooa praktikum\s01p01-master\s01p01-master\</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>13</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'str' is dereferenced, but may still be NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>
